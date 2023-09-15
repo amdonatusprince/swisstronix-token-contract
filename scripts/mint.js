@@ -1,8 +1,6 @@
 const hre = require("hardhat");
 const { encryptDataField, decryptNodeResponse } = require("@swisstronik/swisstronik.js");
 
-
-
 const sendShieldedTransaction = async (signer, destination, data, value) => {
     // Get the RPC link from the network configuration
     const rpclink = hre.network.config.url;
